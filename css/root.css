@@ -1,0 +1,48 @@
+/* COLOR STYLE GUIDE */
+:root {
+  /* Primary colors */
+  --primary-electric-blue: #6319ff;
+  --primary-vivid-green: #0cbb52;
+  --primary-light-pink: #fbccd2;
+  --primary-cream-color: #e2ccbf;
+  --primary-peach-color: #fff3ed;
+  --primary-warmth-color: #fffefd;
+  --primary-extra-color: #d2d2d2;
+  /* Secondary colors */
+  --secondary-black-color: #131313;
+  --secondary-eerie-black: #1c1c1c;
+  --secondary-dark-gray: #5a5a59;
+  --secondary-medium-gray: #b3b3b3;
+  --secondary-light-gray: #d2d2d2;
+  /* Gradient */
+  --gradient-slate-blue: #844aff;
+  --gradient-vivid-violet: #6015ff;
+}
+
+/* Global */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "General Sans", sans-serif;
+  color: var(--secondary-dark-gray);
+}
+
+/* Container */
+.container {
+  max-width: 129rem;
+}
+
+/* Grid layout */
+.grid {
+  display: grid;
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
