@@ -6,6 +6,7 @@
   --primary-light-pink: #fbccd2;
   --primary-cream-color: #e2ccbf;
   --primary-peach-color: #fff3ed;
+  --primary-peach-shade-color: #f0e5df;
   --primary-warmth-color: #fffefd;
   --primary-extra-color: #d2d2d2;
   /* Secondary colors */
@@ -29,9 +30,20 @@ body {
   color: var(--secondary-dark-gray);
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
 /* Container */
 .container {
   max-width: 129rem;
+  padding: 0 1.6rem;
 }
 
 /* Grid layout */
@@ -45,4 +57,20 @@ body {
 
 .grid-cols-3 {
   grid-template-columns: repeat(3, 1fr);
+}
+
+/* Box icons */
+.box-icon {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+  background-color: var(--primary-light-pink);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-icon img {
+  width: 1.4rem;
+  height: 1.4rem;
 }

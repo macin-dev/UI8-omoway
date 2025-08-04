@@ -1,0 +1,80 @@
+/* 
+******************************
+BUTTON
+****************************** 
+*/
+
+/* Global Button Styles */
+.btn {
+  border: none;
+  border-radius: 90px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  line-height: 100%;
+  transition: all 0.3s;
+}
+
+.btn-primary {
+  white-space: nowrap;
+  text-transform: capitalize;
+  color: var(--primary-warmth-color);
+  background: radial-gradient(
+    circle at center,
+    var(--gradient-slate-blue),
+    var(--gradient-vivid-violet)
+  );
+}
+
+.btn-secondary {
+  color: var(--secondary-black-color);
+  background-color: var(--primary-peach-color);
+}
+
+/* Hover button state */
+.btn-primary:hover {
+  background: radial-gradient(
+    circle at center,
+    var(--gradient-vivid-violet),
+    var(--gradient-slate-blue)
+  );
+}
+
+.btn-secondary:hover {
+  background-color: var(--primary-peach-shade-color);
+}
+
+/* Small */
+.btn-sm {
+  padding: 0.8rem 1.6rem;
+}
+
+/* Medium */
+.btn-md {
+  padding: 1.6rem 2.4rem;
+}
+
+/* Large */
+.btn-lg {
+  padding: 2.4rem 3.2rem;
+}
+
+/* TEXT SIZES */
+.text-sm {
+  font-size: 1.6rem;
+}
+
+.text-md {
+  font-size: 1.8rem;
+}
+
+/* MARGIN */
+.mb-sm {
+  margin-bottom: 2rem;
+}
+
+.mb-md {
+  margin-bottom: 3.2rem;
+}
