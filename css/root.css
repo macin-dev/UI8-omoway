@@ -43,7 +43,25 @@ h6 {
 /* Container */
 .container {
   max-width: 129rem;
+}
+
+/* Heading */
+.heading-1 {
+  color: var(--secondary-black-color);
+  font-size: 4.8rem;
+  font-weight: 500;
+  text-align: center;
+  line-height: 100%;
+  letter-spacing: -0.2px;
+}
+
+/* Padding */
+.px-sm {
   padding: 0 1.6rem;
+}
+
+.py-layout {
+  padding: 5.6rem 0;
 }
 
 /* Grid layout */
