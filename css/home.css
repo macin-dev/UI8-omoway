@@ -10,6 +10,7 @@ HERO SECTION
 }
 
 .hero-box-illustration img {
+  width: 100%;
   display: block;
 }
 
@@ -18,6 +19,7 @@ HERO SECTION
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 1.2rem;
   margin-bottom: 1.5rem;
 }
@@ -29,8 +31,9 @@ HERO SECTION
 
 .hero-box-buttons {
   display: flex;
+  flex-wrap: wrap;
   gap: 0.8rem;
-  height: 56px;
+  min-height: 5.6rem;
 }
 
 .hero-box-buttons .btn-primary {
