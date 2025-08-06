@@ -35,6 +35,7 @@ HERO SECTION
 
 .hero-box-buttons .btn-primary {
   flex: 1;
+  text-transform: capitalize;
 }
 
 .hero-box-buttons .btn-secondary {
@@ -56,6 +57,53 @@ HERO SECTION
   overflow: hidden;
 }
 
-.partners-logo img {
+/* 
+******************************
+ABOUT US SECTION
+****************************** 
+*/
+.section-about-us {
+  background-color: var(--primary-peach-color);
+  position: relative;
+}
+
+.about-box-illustration {
+  margin-bottom: 4.8rem;
+}
+
+.about-box-illustration img {
   width: 100%;
+  display: block;
+  position: relative;
+  z-index: 1;
+}
+
+.about-box-illustration::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  background: url("https://ui8-assets.s3.us-east-1.amazonaws.com/omoway/shape/grid-shape.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 45.7rem;
+  top: 0;
+  left: 0;
+}
+
+.about-box-information h2 {
+  text-transform: capitalize;
+}
+
+.about-text {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 2.4rem;
+}
+
+.about-button {
+  display: flex;
+  justify-content: center;
+  height: 5.6rem;
+  letter-spacing: -0.1px;
 }

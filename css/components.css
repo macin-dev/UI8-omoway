@@ -19,7 +19,6 @@ BUTTON
 
 .btn-primary {
   white-space: nowrap;
-  text-transform: capitalize;
   color: var(--primary-warmth-color);
   background: radial-gradient(
     circle at center,
@@ -71,6 +70,10 @@ BUTTON
 }
 
 /* MARGIN */
+.mb-xs {
+  margin-bottom: 1.6rem;
+}
+
 .mb-sm {
   margin-bottom: 2rem;
 }
