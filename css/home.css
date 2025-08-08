@@ -110,3 +110,101 @@ ABOUT US SECTION
   height: 5.6rem;
   letter-spacing: -0.1px;
 }
+
+/* 
+******************************
+RECENT WORK SECTION
+****************************** 
+*/
+
+/* Section */
+.section-recent-work {
+  background-color: var(--secondary-black-color);
+}
+
+.articles-work {
+  display: grid;
+  justify-content: center;
+  row-gap: 2.4rem;
+}
+
+/* Heading */
+.work-box-heading {
+  max-width: 35.8rem;
+  color: var(--primary-warmth-color);
+}
+
+.work-creative-title {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 2.4rem;
+}
+
+.work-creative-title p {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 100%;
+}
+
+.work-title {
+  text-transform: capitalize;
+  font-size: 4.2rem;
+  font-weight: 500;
+  line-height: 100%;
+  letter-spacing: -0.3px;
+  margin-bottom: 0.8rem;
+}
+
+/* Card */
+.work-card {
+  max-width: 35.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  align-items: start;
+}
+
+.work-card img {
+  width: 100%;
+  border-radius: 2.4rem;
+}
+
+/* Tags */
+.card-tags {
+  display: flex;
+  align-items: center;
+  gap: 2.8rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 100%;
+  color: var(--secondary-medium-gray);
+  margin-bottom: 1.2rem;
+}
+
+/* title */
+.card-title {
+  color: var(--primary-warmth-color);
+  font-size: 2.4rem;
+  letter-spacing: -0.1px;
+  font-weight: 500;
+  line-height: 100%;
+}
+
+/* Button */
+.article-button {
+  margin-top: 2rem;
+  max-width: 35.8rem;
+  text-align: center;
+}
+
+.article-button p {
+  font-size: 1.4rem;
+  line-height: 140%;
+  color: var(--secondary-light-gray);
+  margin-bottom: 3.2rem;
+}
+
+.article-button button {
+  margin: 0 auto;
+}
