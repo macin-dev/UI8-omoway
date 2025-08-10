@@ -43,6 +43,7 @@ h6 {
 /* Container */
 .container {
   max-width: 129rem;
+  margin: 0 auto;
 }
 
 /* Heading */

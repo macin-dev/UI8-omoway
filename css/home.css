@@ -113,59 +113,82 @@ ABOUT US SECTION
 
 /* 
 ******************************
-RECENT WORK SECTION
+POSTING SECTION
 ****************************** 
 */
 
 /* Section */
-.section-recent-work {
+.section-post {
   background-color: var(--secondary-black-color);
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
 }
 
-.articles-work {
+/* Grid layout */
+.current-posts {
+  max-width: 61.7rem;
   display: grid;
-  justify-content: center;
   row-gap: 2.4rem;
 }
 
-/* Heading */
-.work-box-heading {
-  max-width: 35.8rem;
-  color: var(--primary-warmth-color);
+.posts {
+  display: flex;
+  flex-direction: column;
 }
 
-.work-creative-title {
+.box--1 {
+  gap: 3.2rem;
+}
+
+.box--2 {
+  gap: 4.2rem;
+}
+
+/* Heading */
+.post-heading {
+  color: var(--primary-warmth-color);
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.post-title {
   display: flex;
   align-items: center;
   gap: 1.2rem;
-  margin-bottom: 2.4rem;
 }
 
-.work-creative-title p {
+.post-title p {
   font-size: 1.4rem;
   font-weight: 500;
   line-height: 100%;
 }
 
-.work-title {
+.heading-3 {
   text-transform: capitalize;
   font-size: 4.2rem;
   font-weight: 500;
   line-height: 100%;
   letter-spacing: -0.3px;
-  margin-bottom: 0.8rem;
 }
 
-/* Card */
-.work-card {
-  max-width: 35.8rem;
+/* Card Post */
+/* Flex layout */
+.lists-post {
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
-  align-items: start;
 }
 
-.work-card img {
+/* Card */
+.post-card {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.post-card img {
+  display: block;
   width: 100%;
   border-radius: 2.4rem;
 }
@@ -191,20 +214,83 @@ RECENT WORK SECTION
   line-height: 100%;
 }
 
-/* Button */
-.article-button {
-  margin-top: 2rem;
-  max-width: 35.8rem;
-  text-align: center;
+/* Post footer */
+.post-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.2rem;
 }
 
-.article-button p {
+.post-footer p {
+  text-align: center;
   font-size: 1.4rem;
   line-height: 140%;
   color: var(--secondary-light-gray);
-  margin-bottom: 3.2rem;
 }
 
-.article-button button {
-  margin: 0 auto;
+/* MEDIA QUERIES */
+@media screen and (min-width: 1024px) {
+  /* 
+    ******************************
+    POSTING SECTION
+    ****************************** 
+  */
+  .section-post {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .current-posts {
+    max-width: 92.4rem;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4.2rem;
+  }
+
+  .post-title p {
+    font-size: 1.6rem;
+    line-height: 140%;
+    font-weight: normal;
+  }
+
+  .heading-3 {
+    text-transform: initial;
+    font-size: 4.8rem;
+    letter-spacing: -0.2px;
+  }
+
+  .heading-3::first-letter {
+    text-transform: capitalize;
+  }
+
+  .post-card img {
+    border-radius: 4.2rem;
+  }
+
+  .card-tags {
+    font-size: 2rem;
+    letter-spacing: -0.1px;
+    margin-bottom: 1.6rem;
+  }
+
+  .card-title {
+    font-size: 3rem;
+    letter-spacing: -0.2px;
+  }
+
+  .post-footer {
+    align-items: start;
+    padding-left: 12rem;
+    gap: 4.2rem;
+  }
+
+  .post-footer p {
+    font-size: 1.6rem;
+    text-align: start;
+  }
+
+  .post-footer button img {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
 }
