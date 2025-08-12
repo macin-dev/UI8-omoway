@@ -120,15 +120,14 @@ POSTING SECTION
 /* Section */
 .section-post {
   background-color: var(--secondary-black-color);
-  padding-left: 1.6rem;
-  padding-right: 1.6rem;
 }
 
 /* Grid layout */
 .current-posts {
-  max-width: 61.7rem;
   display: grid;
   row-gap: 2.4rem;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
 }
 
 .posts {
@@ -222,6 +221,15 @@ POSTING SECTION
   gap: 3.2rem;
 }
 
+.post-footer button img {
+  display: none;
+}
+
+.post-footer button {
+  font-size: 1.8rem;
+  padding: 1.6rem 2.4rem;
+}
+
 .post-footer p {
   text-align: center;
   font-size: 1.4rem;
@@ -236,15 +244,11 @@ POSTING SECTION
     POSTING SECTION
     ****************************** 
   */
-  .section-post {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
   .current-posts {
-    max-width: 92.4rem;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 4.2rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
   }
 
   .post-title p {
@@ -261,6 +265,10 @@ POSTING SECTION
 
   .heading-3::first-letter {
     text-transform: capitalize;
+  }
+
+  .lists-post {
+    gap: 6.4rem;
   }
 
   .post-card img {
@@ -290,7 +298,40 @@ POSTING SECTION
   }
 
   .post-footer button img {
+    display: inline-block;
     width: 2.4rem;
     height: 2.4rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /* 
+    ******************************
+    POSTING SECTION
+    ****************************** 
+  */
+
+  .current-posts {
+    padding-left: 7.5rem;
+    padding-right: 7.5rem;
+    gap: 5.6rem;
+  }
+
+  .heading-3 {
+    font-size: 7.2rem;
+    letter-spacing: -0.3px;
+  }
+
+  .card-title {
+    font-size: 3.8rem;
+  }
+
+  .post-footer {
+    padding-left: 20rem;
+  }
+
+  /* Large Button */
+  .post-footer button {
+    padding: 2.4rem 3.2rem;
   }
 }
