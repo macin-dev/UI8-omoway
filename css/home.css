@@ -4,12 +4,15 @@ HERO SECTION
 ****************************** 
 */
 
-/* Box illustration */
-.hero-box-illustration {
-  margin: 4.2rem 0 2.4rem 0;
+.hero-banner {
+  display: flex;
+  flex-direction: column;
+  gap: 4.2rem;
+  padding: 5.6rem 1.6rem 0;
 }
 
-.hero-box-illustration img {
+/* Box illustration */
+.illustration img {
   width: 100%;
   display: block;
 }
@@ -21,7 +24,7 @@ HERO SECTION
   justify-content: center;
   flex-wrap: wrap;
   gap: 1.2rem;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.6rem;
 }
 
 .hero-text p {
@@ -29,6 +32,11 @@ HERO SECTION
   line-height: 140%;
 }
 
+.heading-1 {
+  margin-bottom: 2.4rem;
+}
+
+/* Buttons */
 .hero-box-buttons {
   display: flex;
   flex-wrap: wrap;
@@ -36,13 +44,18 @@ HERO SECTION
   min-height: 5.6rem;
 }
 
-.hero-box-buttons .btn-primary {
-  flex: 1;
-  text-transform: capitalize;
+.hero-box-buttons button img {
+  display: none;
 }
 
-.hero-box-buttons .btn-secondary {
+.hero-box-buttons button {
   flex: 1;
+  padding: 1.6rem 2.4rem;
+  font-size: 1.8rem;
+}
+
+.hero-box-buttons .btn-primary {
+  text-transform: capitalize;
 }
 
 .slogan {
@@ -50,6 +63,22 @@ HERO SECTION
   line-height: 140%;
   text-align: center;
   padding: 0 1rem;
+}
+
+/* Box Icon */
+.box-icon {
+  width: 3.2rem;
+  height: 3.2rem;
+  border-radius: 50%;
+  background-color: var(--primary-light-pink);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-icon img {
+  width: 1.4rem;
+  height: 1.4rem;
 }
 
 /* Partners logo */
@@ -117,7 +146,6 @@ POSTING SECTION
 ****************************** 
 */
 
-/* Section */
 .section-post {
   background-color: var(--secondary-black-color);
 }
@@ -238,7 +266,103 @@ POSTING SECTION
 }
 
 /* MEDIA QUERIES */
+@media screen and (min-width: 600px) {
+  /* 
+    ******************************
+    HERO SECTION
+    ****************************** 
+  */
+  .hero-box-buttons {
+    max-width: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .illustration {
+    max-width: 80%;
+    width: 100%;
+    align-self: center;
+  }
+}
+
 @media screen and (min-width: 1024px) {
+  /* 
+    ******************************
+    HERO SECTION
+    ****************************** 
+  */
+
+  .hero-banner {
+    flex-direction: row;
+    padding: 4.2rem 5rem 6.4rem;
+  }
+
+  /* Box icon */
+  .box-icon {
+    width: 4.2rem;
+    height: 4.2rem;
+  }
+
+  .box-icon img {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+
+  /* Information */
+  .information {
+    padding-top: 4.2rem;
+  }
+
+  .hero-text {
+    justify-content: flex-start;
+    margin-bottom: 2.4rem;
+  }
+
+  .heading-1 {
+    font-size: 7.2rem;
+    text-align: start;
+    letter-spacing: -2.16px;
+    text-transform: capitalize;
+  }
+
+  .heading-1 {
+    margin-bottom: 5.6rem;
+  }
+
+  /* Buttons */
+  .hero-box-buttons {
+    max-width: initial;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .hero-box-buttons button {
+    flex: 0 1 auto;
+  }
+
+  .hero-box-buttons button img {
+    display: inline-block;
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+
+  /* Slogan */
+  .slogan {
+    text-align: start;
+    padding: 0;
+  }
+
+  /* Illustration */
+  .illustration {
+    flex: 0 0 auto;
+  }
+
+  .illustration {
+    max-width: initial;
+    width: initial;
+    align-self: initial;
+  }
+
   /* 
     ******************************
     POSTING SECTION
@@ -305,6 +429,30 @@ POSTING SECTION
 }
 
 @media screen and (min-width: 1440px) {
+  /* 
+    ******************************
+    HERO SECTION
+    ****************************** 
+  */
+  .hero-banner {
+    gap: 0;
+    padding: 3.6rem 7.5rem 0;
+  }
+
+  .heading-1 {
+    font-size: 10rem;
+    letter-spacing: -3px;
+  }
+
+  /* Buttons */
+  .hero-box-buttons button {
+    padding: 2.4rem 3.2rem;
+  }
+
+  .slogan {
+    width: 50%;
+  }
+
   /* 
     ******************************
     POSTING SECTION

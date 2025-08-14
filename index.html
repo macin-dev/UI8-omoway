@@ -23,10 +23,10 @@
     <title>Omoway</title>
   </head>
   <body>
-    <section class="section-hero py-layout">
-      <div class="container grid px-sm">
+    <section class="section-hero">
+      <div class="hero-banner container">
         <!-- Content -->
-        <div class="hero-box-information">
+        <div class="hero-box information">
           <div class="hero-text">
             <div class="box-icon">
               <img
@@ -36,13 +36,25 @@
             </div>
             <p>On demand 🤝 live support</p>
           </div>
-          <h1 class="heading-1 mb-sm">
+          <h1 class="heading-1">
             Awesome <span class="title-solution">solution</span> for your
             business
           </h1>
           <div class="hero-box-buttons mb-md">
-            <button class="btn btn-primary btn-md text-md">get started</button>
-            <button class="btn btn-secondary btn-md text-md">Learn more</button>
+            <button class="btn btn-primary">
+              get started now
+              <img
+                src="https://ui8-assets.s3.us-east-1.amazonaws.com/omoway/icons/Arrow-right-circle-white.svg"
+                alt="arrow right circle"
+              />
+            </button>
+            <button class="btn btn-secondary">
+              Learn more
+              <img
+                src="https://ui8-assets.s3.us-east-1.amazonaws.com/omoway/icons/Arrow-right-circle.svg"
+                alt="arrow right circle"
+              />
+            </button>
           </div>
           <p class="slogan">
             We create compelling web designs, which are the right-fit for your
@@ -51,42 +63,56 @@
         </div>
 
         <!-- Illustration -->
-        <div class="hero-box-illustration">
-          <img
-            src="https://ui8-assets.s3.us-east-1.amazonaws.com/omoway/illustrations/illustration-hero.png"
-            alt="Track and analyze the business reports"
-          />
+        <div class="hero-box illustration">
+          <picture>
+            <source
+              media="(max-width: 1023px)"
+              srcset="
+                https://ui8-assets.s3.us-east-1.amazonaws.com/omoway/illustrations/illustration-hero.png
+              "
+            />
+            <source
+              media="(max-width: 1439px)"
+              srcset="
+                https://ui8-assets.s3.us-east-1.amazonaws.com/omoway/illustrations/Illustration-hero-tablet.png
+              "
+            />
+            <img
+              src="https://ui8-assets.s3.us-east-1.amazonaws.com/omoway/illustrations/Illustration-hero-desktop.png"
+              alt="Track and analyze the business reports"
+            />
+          </picture>
         </div>
       </div>
+    </section>
 
-      <!-- Partners logo -->
-      <div class="partners-logo">
-        <img
-          src="https://ui8-assets.s3.us-east-1.amazonaws.com/omoway/logos/docusign-logo.png"
-          alt="docusign logo"
-        />
-        <img
-          src="https://ui8-assets.s3.us-east-1.amazonaws.com/omoway/logos/maze-logo.png"
-          alt="maze logo"
-        />
-        <img
-          src="https://ui8-assets.s3.us-east-1.amazonaws.com/omoway/logos/culture-logo.png"
-          alt="culture amp logo"
-        />
-        <img
-          src="https://ui8-assets.s3.us-east-1.amazonaws.com/omoway/logos/hellosign-logo.png"
-          alt="hellosign logo"
-        />
-        <img
-          src="https://ui8-assets.s3.us-east-1.amazonaws.com/omoway/logos/attentive-logo.png"
-          alt="attentive logo"
-        />
-      </div>
+    <!-- Partners logo -->
+    <section class="partners-logo">
+      <img
+        src="https://ui8-assets.s3.us-east-1.amazonaws.com/omoway/logos/docusign-logo.png"
+        alt="docusign logo"
+      />
+      <img
+        src="https://ui8-assets.s3.us-east-1.amazonaws.com/omoway/logos/maze-logo.png"
+        alt="maze logo"
+      />
+      <img
+        src="https://ui8-assets.s3.us-east-1.amazonaws.com/omoway/logos/culture-logo.png"
+        alt="culture amp logo"
+      />
+      <img
+        src="https://ui8-assets.s3.us-east-1.amazonaws.com/omoway/logos/hellosign-logo.png"
+        alt="hellosign logo"
+      />
+      <img
+        src="https://ui8-assets.s3.us-east-1.amazonaws.com/omoway/logos/attentive-logo.png"
+        alt="attentive logo"
+      />
     </section>
 
     <!-- About us -->
     <section class="section-about-us py-layout">
-      <div class="container grid px-sm">
+      <div class="about-container container grid px-sm">
         <div class="about-box-illustration">
           <img
             src="https://ui8-assets.s3.us-east-1.amazonaws.com/omoway/illustrations/illustration-working-experience.png"
