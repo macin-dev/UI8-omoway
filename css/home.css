@@ -94,13 +94,23 @@ HERO SECTION
 ABOUT US SECTION
 ****************************** 
 */
+
 .section-about-us {
   background-color: var(--primary-peach-color);
   position: relative;
+  overflow: hidden;
+  padding: 5.6rem 1.6rem;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4.8rem;
 }
 
 .about-box-illustration {
-  margin-bottom: 4.8rem;
+  max-width: 60rem;
 }
 
 .about-box-illustration img {
@@ -117,27 +127,43 @@ ABOUT US SECTION
   background: url("https://ui8-assets.s3.us-east-1.amazonaws.com/omoway/shape/grid-shape.png");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
+  min-width: 100%;
+  width: 55.4rem;
   height: 45.7rem;
   top: 0;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.about-box-information {
+  max-width: 60rem;
 }
 
 .about-box-information h2 {
   text-transform: capitalize;
+  letter-spacing: -1.26px;
 }
 
 .about-text {
   font-size: 1.6rem;
   text-align: center;
   margin-bottom: 2.4rem;
+  line-height: 140%;
 }
 
 .about-button {
   display: flex;
   justify-content: center;
   height: 5.6rem;
-  letter-spacing: -0.1px;
+}
+
+.about-button button {
+  padding: 1.6rem 2.4rem;
+  font-size: 1.8rem;
+  letter-spacing: -0.18px;
+}
+.about-button img {
+  display: none;
 }
 
 /* 
@@ -361,6 +387,69 @@ POSTING SECTION
     max-width: initial;
     width: initial;
     align-self: initial;
+  }
+
+  /* 
+    ******************************
+    ABOUT US SECTION
+    ****************************** 
+  */
+
+  .section-about-us {
+    padding: 6.4rem 5rem;
+  }
+
+  .about-container {
+    flex-direction: row;
+    gap: 6.4rem;
+  }
+
+  .about-box-illustration {
+    max-width: initial;
+    flex: 0 0 43.4rem;
+  }
+
+  .about-box-information h2 {
+    font-size: 4.8rem;
+    text-transform: lowercase;
+    letter-spacing: -0.96px;
+    text-align: start;
+    margin-bottom: 3.2rem;
+  }
+
+  .about-box-information h2::first-letter {
+    text-transform: uppercase;
+  }
+
+  .about-text {
+    text-align: start;
+    font-size: 1.8rem;
+    margin-bottom: 4.8rem;
+  }
+
+  .about-button {
+    height: auto;
+    justify-content: start;
+  }
+
+  .about-button button {
+    padding: 2.4rem 3.2rem;
+  }
+
+  .about-button img {
+    display: inline-block;
+  }
+
+  .about-box-illustration::after {
+    background-size: cover;
+    width: 102.4rem;
+    height: 83.5rem;
+    top: 0;
+    left: 24.5rem;
+  }
+
+  .about-box-information {
+    max-width: initial;
   }
 
   /* 
