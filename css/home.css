@@ -103,10 +103,12 @@ ABOUT US SECTION
 }
 
 .about-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 4.8rem;
+  z-index: 2;
 }
 
 .about-box-illustration {
@@ -116,11 +118,9 @@ ABOUT US SECTION
 .about-box-illustration img {
   width: 100%;
   display: block;
-  position: relative;
-  z-index: 1;
 }
 
-.about-box-illustration::after {
+.section-about-us::after {
   content: "";
   display: inline-block;
   position: absolute;
@@ -440,8 +440,7 @@ POSTING SECTION
     display: inline-block;
   }
 
-  .about-box-illustration::after {
-    background-size: cover;
+  .section-about-us::after {
     width: 102.4rem;
     height: 83.5rem;
     top: 0;
