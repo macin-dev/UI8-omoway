@@ -4,11 +4,14 @@ HERO SECTION
 ****************************** 
 */
 
+.section-hero {
+  padding: 5.6rem 1.6rem 2.4rem;
+}
+
 .hero-banner {
   display: flex;
   flex-direction: column;
   gap: 4.2rem;
-  padding: 5.6rem 1.6rem 0;
 }
 
 /* Box illustration */
@@ -173,6 +176,7 @@ POSTING SECTION
 */
 
 .section-post {
+  padding: 5.6rem 1.6rem;
   background-color: var(--secondary-black-color);
 }
 
@@ -180,8 +184,6 @@ POSTING SECTION
 .current-posts {
   display: grid;
   row-gap: 2.4rem;
-  padding-left: 1.6rem;
-  padding-right: 1.6rem;
 }
 
 .posts {
@@ -318,9 +320,12 @@ POSTING SECTION
     ****************************** 
   */
 
+  .section-hero {
+    padding: 4.2rem 5rem 6.4rem;
+  }
+
   .hero-banner {
     flex-direction: row;
-    padding: 4.2rem 5rem 6.4rem;
   }
 
   /* Box icon */
@@ -456,11 +461,14 @@ POSTING SECTION
     POSTING SECTION
     ****************************** 
   */
+
+  .section-post {
+    padding: 6.4rem 5rem;
+  }
+
   .current-posts {
     grid-template-columns: repeat(2, 1fr);
     column-gap: 4.2rem;
-    padding-left: 5rem;
-    padding-right: 5rem;
   }
 
   .post-title p {
@@ -516,15 +524,37 @@ POSTING SECTION
   }
 }
 
+@media screen and (min-width: 1290px) {
+  /* 
+    ******************************
+    HERO SECTION
+    ABOUT US SECTION
+    POSTING SECTION
+    ****************************** 
+  */
+
+  .section-hero,
+  .section-about-us,
+  .section-post {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
 @media screen and (min-width: 1440px) {
   /* 
     ******************************
     HERO SECTION
     ****************************** 
   */
+
+  .section-hero {
+    padding-top: 3.6rem;
+    padding-bottom: 0;
+  }
+
   .hero-banner {
     gap: 0;
-    padding: 3.6rem 7.5rem 0;
   }
 
   .heading-1 {
@@ -548,7 +578,7 @@ POSTING SECTION
   */
 
   .section-about-us {
-    padding: 12rem 7.2rem;
+    padding: 12rem 0;
   }
 
   .about-box-illustration {
@@ -570,9 +600,11 @@ POSTING SECTION
     ****************************** 
   */
 
+  .section-post {
+    padding: 12rem 0;
+  }
+
   .current-posts {
-    padding-left: 7.5rem;
-    padding-right: 7.5rem;
     gap: 5.6rem;
   }
 
