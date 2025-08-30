@@ -84,12 +84,62 @@ HERO SECTION
   height: 1.4rem;
 }
 
-/* Partners logo */
-.partners-logo {
-  display: flex;
-  gap: 3.6rem;
-  height: 3.6rem;
+/* 
+******************************
+PARTNERS LOGO
+****************************** 
+*/
+
+.partners-logos {
+  --width-mobile: 12rem;
+  --height-mobile: 3.6rem;
+  --quantity: 5;
+  width: 100%;
+  margin-bottom: 5.6rem;
+}
+
+.partners-logos .partners-slider {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 129rem;
   overflow: hidden;
+  height: var(--height-mobile);
+}
+
+.partners-slider .list {
+  opacity: 0.6;
+  width: 100%;
+  min-width: calc(var(--width-mobile) * var(--quantity));
+  position: relative;
+}
+
+.list:hover .item {
+  animation-play-state: paused;
+}
+
+.list .item {
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  width: var(--width-mobile);
+  height: var(--height-mobile);
+  position: absolute;
+  left: 100%;
+  animation: autoRun 10s linear infinite;
+  animation-delay: calc((10s / var(--quantity)) * (var(--position) - 1) - 10s);
+}
+
+.item img {
+  width: 100%;
+}
+
+@keyframes autoRun {
+  from {
+    left: 100%;
+  }
+  to {
+    left: calc(var(--width-mobile) * -1);
+  }
 }
 
 /* 
@@ -396,6 +446,40 @@ POSTING SECTION
 
   /* 
     ******************************
+    PARTNERS LOGO
+    ****************************** 
+  */
+
+  .partners-logos {
+    --width-tablet: 20rem;
+    --height-tablet: 6.2rem;
+    margin-block: 3.5rem;
+  }
+
+  .partners-logos .partners-slider {
+    height: var(--height-tablet);
+  }
+
+  .partners-slider .list {
+    min-width: calc(var(--width-tablet) * var(--quantity));
+  }
+
+  .list .item {
+    width: var(--width-tablet);
+    height: var(--height-tablet);
+  }
+
+  @keyframes autoRun {
+    from {
+      left: 100%;
+    }
+    to {
+      left: calc(var(--width-tablet) * -1);
+    }
+  }
+
+  /* 
+    ******************************
     ABOUT US SECTION
     ****************************** 
   */
@@ -569,6 +653,16 @@ POSTING SECTION
 
   .slogan {
     width: 50%;
+  }
+
+  /* 
+    ******************************
+    PARTNERS LOGO
+    ****************************** 
+  */
+
+  .partners-logos {
+    margin-block: 6.4rem;
   }
 
   /* 
